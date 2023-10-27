@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>musIQ</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
+            <!-- White cursive text for "mus" -->
+            <text x="10" y="40" font-family="cursive" font-size="30" fill="white">mus</text>
+            <!-- Black text for "IQ" -->
+            <text x="62" y="40" font-family="Georgia" font-size="30" fill="black">IQ</text>
+        </svg>
+    </div>
+    <!-- Add a div for the toast -->
+    <div class="toast-notification" style="opacity: 0;"></div>
+    <div class="container-main">
+        <div class="score">Score: <span id="score">0</span></div>
+        <h1><p id="question"></p></h1>
+        <div class="options" id="options">
+        </div>
+    </div>
+    <div class="end-game-modal" id="end-game-modal">
+        <div class="end-game-content">
+            <h2>Game Over!</h2>
+            <p>Your Score: <span id="final-score">0</span></p>
+            <button class="play-again-button" id="play-again-button" onclick=startNewGame()>Play Again</button>
+        </div>
+    </div>
+    
+
+    <script src="index.js"></script>
+
+  </body>
+</html>
