@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  background-image: linear-gradient(180deg, #e0c3fc 0%, #8ec5fc 100%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative; /* Add this line */
+}
+
+.container-main {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 3%;
+  text-align: center;
+  max-width: 320px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 20px;
+}
+.options {
+  margin: 10px 0;
+}
+.option {
+  display: inline-block;
+  width: 30%; /* Adjust the width as needed */
+  background-color: #e9e9e9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.option:hover {
+  background-color: #d3d3d3;
+}
+.logo {
+  position: absolute;
+  top: 2%; /* Adjust as needed */
+  left: 2%; /* Adjust as needed */
+}
+.feedback {
+  font-size: 36px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+}
+
+
+.correct {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.incorrect {
+  background-color: #F44336; /* Red */
+  color: white;
+}
+.toast-container {
+  position: absolute;
+  top: 20px; /* Adjust the top position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 995; /* Increase the z-index value to make it appear above other elements */
+}
+
+.toast-notification {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none;
+}
+
+.score {
+  padding-left: 80%;
+}
+
+/* Styles for the modal */
+/* Styles for the modal */
+.end-game-modal {
+  display: none; /* Remove display: flex; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.end-game-content {
+  background-color: #fefefe;
+  top: 10%;
+  left: 25%;
+  width: 30%;
+  border-radius: 10px;
+  text-align: center;
+  padding: 8%;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.play-again-button {
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 1001; /* Set a higher z-index */
+}
+
+/* Style the button on hover */
+.play-again-button:hover {
+  background: #45a049;
+}
